@@ -1,127 +1,165 @@
-*{
+* {
     box-sizing: border-box;
 }
-body, html{
+
+body,
+html {
     padding: 0;
     margin: 0;
 }
-.container{
+
+.container {
     max-width: 1290px;
     margin: auto;
     position: relative;
-    min-width: 960px;
 }
+
+
 /*
 ____________________
 header
 ___________________
 */
-.top-bar{
+
+header {
+    overflow: hidden;
+}
+
+.top-bar {
     background-color: #f2f2f2;
 }
-.bar{
+
+.bar {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
-.bar-left-side, .bar-right-side{
-    width: 50%;
 
-}
-.bar-left-side{
-    font-size: 11px; /* Approximation due to font substitution */
+.bar-left-side,
+.bar-right-side {}
+
+.bar-left-side {
+    font-size: 11px;
+    /* Approximation due to font substitution */
     font-weight: 400;
-    line-height: 18px; /* Approximation due to font substitution */
+    line-height: 18px;
+    /* Approximation due to font substitution */
     min-height: 38px;
+    flex: 25%;
 }
-.bar-left-side p{
+
+.bar-left-side p {
     padding-left: 10px;
     font-family: 'Lato', sans-serif;
     color: #393939;
-    font-size: 11px; /* Approximation due to font substitution */
+    font-size: 11px;
+    /* Approximation due to font substitution */
     font-weight: 400;
-    line-height: 18px; /* Approximation due to font substitution */
-    
+    line-height: 18px;
+    /* Approximation due to font substitution */
 }
-.bar-left-side i{
-    padding-right:10px;
+
+.bar-left-side i {
+    padding-right: 10px;
 }
-.bar-right-side{
+
+.bar-right-side {
     min-height: 38px;
+    flex: 75%;
 }
-.bar-right-side a{
+
+.bar-right-side a {
     font-family: 'Lato', sans-serif;
-    color:  #393939;
-    font-size: 11px; /* Approximation due to font substitution */
+    color: #393939;
+    font-size: 11px;
+    /* Approximation due to font substitution */
     font-weight: 400;
-    line-height: 18px; /* Approximation due to font substitution */
-    
+    line-height: 18px;
+    /* Approximation due to font substitution */
     text-decoration: none;
     padding-right: 20px;
     padding-left: 20px;
-   
-   
 }
-.bar-right-side li{
+
+.bar-right-side li {
     display: inline-block;
 }
-.bar-right-side li+li{
+
+.bar-right-side li+li {
     border-left: 1px solid #525252;
 }
-.bar-right-side nav{
+
+.bar-right-side nav {
     text-align: right;
-    margin-right: -20px;
-   
 }
+
+
 /* 
 --------------
 main menu
 --------------
 */
-.main-menu{
-    height: 127px;
+
+section {
+    overflow: hidden;
 }
-.bottom{
+
+.main-menu {}
+
+.bottom {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    position: relative;
 }
-.menu, .logo, .bottom-right-side{
+
+.fabars {
+    position: absolute;
+    display: none;
+}
+
+.menu,
+.logo,
+.bottom-right-side {
     width: 33.33333%;
     height: 127px;
-    
 }
-.menu{
+
+.menu {
     padding-top: 46px;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
     margin-left: 0;
     margin-right: 20px;
-   
-    
 }
-.menu ul{
+
+.menu ul {
     text-align: left;
-    margin-left:-40px;
+    margin-left: -40px;
 }
-.menu a{
+
+.menu a {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: bold;
     list-style: none;
-   text-decoration: none;
+    text-decoration: none;
     color: #000000;
 }
-.logo{
+
+.logo {
     text-align: center;
     padding-top: 32px;
 }
-.bottom-right-side{
+
+.bottom-right-side {
     text-align: right;
     padding-top: 43px;
 }
-.bottom-right-side div{
-  
+
+.bottom-right-side div {
     border-radius: 50%;
     border-style: solid;
     border-width: 2px;
@@ -133,11 +171,13 @@ main menu
     text-align: center;
     margin-left: 13px;
 }
-.bottom-right-side div i{
-    color:#d9bf8f;
+
+.bottom-right-side div i {
+    color: #d9bf8f;
     padding-top: 6px;
 }
-.bottom-right-side select{
+
+.bottom-right-side select {
     height: 35px;
     width: 91px;
     color: #ffffff;
@@ -150,79 +190,88 @@ main menu
     display: inline-block;
     margin-left: 52px;
 }
+
+
 /*
 ------------------------
 sale
 ------------------------
 */
-.sale{
+
+.sale {
     background-image: url(../img/Sale.png);
     height: 692px;
     background-size: cover;
+    margin-top: 20px;
 }
-.main{
+
+.main {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
     height: 692px;
     margin-bottom: 100px;
-    margin-top: 20px;
 }
-.triangle{
+
+.triangle {
     width: 0;
-	height: 0;
-	border-left: 200px solid transparent;
-	border-right: 200px solid transparent;
-	border-top: 60px solid #ffffff;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 60px solid #ffffff;
 }
-.content{
+
+.content {
     width: 277px;
     height: 277px;
     border: 2px solid #ffffff;
     padding: 0;
-    margin:0;
+    margin: 0;
     position: relative;
     text-align: center;
-    
 }
-.content p{
+
+.content p {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     margin: 0;
-}  
-.white-font{
+}
+
+.white-font {
     font-size: 19.44px;
     color: #ffffff;
     margin-top: 37px;
     position: absolute;
-    
 }
-.season{
+
+.season {
     position: absolute;
     left: 76px;
     top: 37px;
 }
-.big-sale{
+
+.big-sale {
     font-size: 58px;
     font-weight: bold;
     position: absolute;
     top: 89px;
     left: 70px;
-    
 }
-.up{
+
+.up {
     top: 166px;
     left: 109px;
 }
-.fifty{
+
+.fifty {
     font-size: 31.36px;
     bottom: 42px;
     left: 76px;
     position: absolute;
-   
 }
-.inside-border{
+
+.inside-border {
     border: 1px solid #ffffff;
     position: absolute;
     top: 6px;
@@ -230,45 +279,51 @@ sale
     left: 6px;
     right: 6px;
 }
-.content div{
+
+.content div {
     position: absolute;
 }
-.left-min-strip{
+
+.left-min-strip {
     width: 33px;
     height: 1px;
     background-color: #ffffff;
     left: 63px;
     bottom: 100px;
 }
-.right-min-strip{
+
+.right-min-strip {
     width: 33px;
     height: 1px;
     background-color: #ffffff;
     right: 63px;
     bottom: 100px;
 }
-.left-big-strip{
+
+.left-big-strip {
     width: 60px;
     height: 1px;
     background-color: #ffffff;
     left: 35px;
     bottom: 92px;
-    
 }
-.right-big-strip{
+
+.right-big-strip {
     width: 60px;
     height: 1px;
     background-color: #ffffff;
     right: 35px;
     bottom: 92px;
-        
 }
+
+
 /*
 --------------------
 shop now
 --------------------
 */
-.shop-button{
+
+.shop-button {
     background: #f09d66;
     height: 53px;
     width: 189px;
@@ -277,66 +332,80 @@ shop now
     font-size: 24px;
     text-align: center;
     padding-top: 12px;
-    
-    
-    
 }
-.shop-button a{
+
+.shop-button a {
     text-decoration: none;
     color: #ffffff;
 }
-.square{
+
+.square {
     padding-bottom: 30px;
 }
-.square div{
+
+.square div {
     width: 18px;
     height: 19px;
     background: #d6d6d6;
     display: inline-block;
     transform: rotate(45deg);
     margin-right: 15px;
-}  
-div .black{
+}
+
+div .black {
     background: #000000;
 }
+
+
 /*
 --------------------------
 sup
 --------------------------
 */
-.sup-flex-container{
+
+.sup-flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    height: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-top: 100px;
 }
-.sup a{
+
+.sup a {
     text-decoration: none;
 }
-.sup-flex-container p{
+
+.sup-flex-container p {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     color: #ffffff;
-    
 }
-.left-sup-main, .center-sup-main, .right-sup-main{
-   display: flex;
+
+.left-sup-main,
+.center-sup-main,
+.right-sup-main {
+    display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
-.left-sup-main .icon, .center-sup-main .icon, .right-sup-main .icon{
-    
+
+.left-sup-main .icon,
+.center-sup-main .icon,
+.right-sup-main .icon {
     font-size: 38px;
-    margin-left: -20px;
     margin-right: 20px;
     margin-top: 20px;
 }
-.left-sup-main div i, .center-sup-main div i, .right-sup-main div i{
+
+.left-sup-main div i,
+.center-sup-main div i,
+.right-sup-main div i {
     margin-top: 5px;
 }
-.left-sup-main h2, .center-sup-main h2, .right-sup-main h2{
+
+.left-sup-main h2,
+.center-sup-main h2,
+.right-sup-main h2 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 30px;
@@ -344,62 +413,73 @@ sup
     padding: 0;
     margin: 0;
 }
-.left-sup-main div, .center-sup-main div, .right-sup-main div{
+
+.left-sup-main div,
+.center-sup-main div,
+.right-sup-main div {
     display: inline-block;
 }
-.left-sup-main .text-sup, .center-sup-main .text-sup, .right-sup-main .text-sup{
+
+.left-sup-main .text-sup,
+.center-sup-main .text-sup,
+.right-sup-main .text-sup {
     padding-top: 15px;
 }
-.left-sup, .right-sup{
-    width: 390px;
+
+.left-sup,
+.right-sup {
     height: 100px;
     background: #d9bf8f;
-    flex:1;
+    flex: 1;
     position: relative;
-    
 }
 
-.left-sup i, .right-sup i, .center-sup i{
+.left-sup i,
+.right-sup i,
+.center-sup i {
     font-size: 48px;
     color: #ffffff;
 }
-.left-sup-triangle{
-   width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 34px solid #d9bf8f;
-	border-bottom: 50px solid transparent;
+
+.left-sup-triangle {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 34px solid #d9bf8f;
+    border-bottom: 50px solid transparent;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 150;
-    
-    
 }
-.right-sup-triangle{
-   width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-right: 34px solid #d9bf8f;
-	border-bottom: 50px solid transparent;
+
+.right-sup-triangle {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 34px solid #d9bf8f;
+    border-bottom: 50px solid transparent;
     position: absolute;
     z-index: 150;
     left: 0;
     top: 0;
 }
-.center-sup{
-    flex:1;
+
+.center-sup {
+    flex: 1;
     height: 100px;
     position: relative;
 }
-.center-sup-main{
+
+.center-sup-main {
     background: #000000;
     height: 100px;
-    width: 448px;
+    max-width: 448px;
     position: relative;
-    
 }
-.space, .space1{
+
+.space,
+.space1 {
     height: 100px;
     width: 34px;
     display: inline-block;
@@ -407,55 +487,63 @@ sup
     position: absolute;
 }
 
-.center-sup-left-triangle{
+.center-sup-left-triangle {
     width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 34px solid #ffffff;
-	border-bottom: 50px solid transparent;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 34px solid #ffffff;
+    border-bottom: 50px solid transparent;
     position: absolute;
     z-index: 20;
 }
-.space{
+
+.space {
     top: 0;
     left: -34px;
     z-index: 100;
 }
-.space1{
+
+.space1 {
     right: -34px;
-    top:0;
+    top: 0;
     z-index: 10;
 }
-.center-sup-right-triangle{
+
+.center-sup-right-triangle {
     width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-right: 34px solid #ffffff;
-	border-bottom: 50px solid transparent;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 34px solid #ffffff;
+    border-bottom: 50px solid transparent;
     position: absolute;
-     right: 0;
+    right: 0;
     top: 0;
 }
+
+
 /*
 ----------------------------------
 dash
 ----------------------------------
 */
-.dash{
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+.dash {
+    overflow: hidden;
 }
-.dash-parent{
+
+.dash-parent {
     position: relative;
     margin-bottom: 100px;
     margin-top: 100px;
 }
-.block-dash{
+
+.block-dash {
     height: 1px;
-    width: 1290px;
+    width: 100%;
     background-color: #eaeaea;
 }
-.block-text p{
+
+.block-text p {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: bold;
@@ -464,49 +552,75 @@ dash
     margin-left: 85px;
     margin-right: 85px;
 }
-.block-text .square div{
+
+.block-text .square div {
     background-color: #d9bf8f;
-    
 }
-.block-text .square{
+
+.block-text .square {
     display: inline-block;
 }
-.block-text{
+
+.block-text {
     width: 500px;
     position: absolute;
-    top: -48px;
-    left: 395px;
+    top: calc(50% - 46.5px);
+    left: calc(50% - 250px);
     background: #ffffff;
     z-index: 20;
     text-align: center;
-    
 }
+
+
 /*
 --------------------------------
 handpicked
 ________________________________
 */
-.handpicked{
-    height: 820px;
+
+.handpicked {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.img-handpicked{
+
+.img-handpicked {
     display: flex;
-    flex-flow: column wrap;
-    height: 820px;
-    justify-content: space-between;
+    flex-flow: row wrap;
     align-content: space-between;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    justify-content: space-around;
 }
-.img-handpicked div{
+
+.img-handpicked .img-left,
+.img-handpicked .img-right {
     position: relative;
+    flex: 1;
+    text-align: center;
 }
-.img-handpicked div div{
+
+.img-handpicked .big-img {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.img-handpicked img {
+    width: 100%;
+    height: 100%;
+}
+
+.big-img div,
+.img-small-top div,
+.img-small-bottom div {
     position: absolute;
 }
-.frame{
+
+.img-small-top,
+.img-small-bottom {
+    position: relative;
+    display: inline-block;
+}
+
+.frame {
     border: 3px solid #ffffff;
     border-radius: 3px;
     top: 20px;
@@ -514,7 +628,8 @@ ________________________________
     left: 20px;
     right: 20px;
 }
-.mask{
+
+.mask {
     top: 20px;
     bottom: 20px;
     left: 20px;
@@ -523,15 +638,17 @@ ________________________________
     opacity: 0.3;
     display: none;
 }
-.horizont-strip{
+
+.horizont-strip {
     background: #d9bf8f;
     height: 1px;
     width: 61px;
-    top:50%;
+    top: 50%;
     left: 170px;
     display: none;
 }
-.vertical-strip{
+
+.vertical-strip {
     background: #d9bf8f;
     height: 1px;
     width: 61px;
@@ -540,7 +657,8 @@ ________________________________
     top: 201px;
     display: none;
 }
-.img-handpicked div .shop-button{
+
+.img-handpicked div .shop-button {
     height: 42px;
     width: 109px;
     font-size: 14.49px;
@@ -549,22 +667,37 @@ ________________________________
     z-index: 15;
     display: none;
 }
-.img-handpicked div:hover .mask, .img-handpicked div:hover .horizont-strip, .img-handpicked div:hover .vertical-strip, .img-handpicked div:hover .button-handpicked{
+
+.img-small-top:hover .mask,
+.img-small-top:hover .horizont-strip,
+.img-small-top:hover .vertical-strip,
+.img-small-top:hover .button-handpicked,
+.img-small-bottom:hover .mask,
+.img-small-bottom:hover .horizont-strip,
+.img-small-bottom:hover .vertical-strip,
+.img-small-bottom:hover .button-handpicked {
     display: block;
 }
-.img-handpicked div:hover .frame{
+
+.img-handpicked .big-img:hover .frame,
+.img-handpicked .img-small-bottom:hover .frame,
+.img-handpicked .img-small-top:hover .frame {
     display: none;
 }
-.big-img .horizont-strip{
-    
-    
+
+.big-img:hover .mask,
+.big-img:hover .horizont-strip,
+.big-img:hover .vertical-strip,
+.big-img:hover .button-handpicked {
+    display: block;
 }
-.big-img .vertical-strip{
-   
+
+.big-img .vertical-strip {
     right: 228px;
     top: 410px;
 }
-.block-text .summer{
+
+.block-text .summer {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: bold;
@@ -573,28 +706,30 @@ ________________________________
     margin-left: 40px;
     margin-right: 40px;
 }
+
+
 /*
 _________________________________
 summercollection
 ________________________________
 */
-.collection{
+
+.collection {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    height: 747px;
     border: 1px solid #eaeaea;
-    align-content:space-around;
+    align-content: space-around;
     margin-bottom: 100px;
     margin-top: 100px;
 }
+
 .trapezoid {
-    
     border-bottom: 44px solid #000000;
-	border-left: 40px solid transparent;
-	border-right: 40px solid transparent;
-	height: 0;
-	width: 198px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    height: 0;
+    width: 198px;
     position: absolute;
     z-index: 100;
     bottom: 4px;
@@ -604,18 +739,29 @@ ________________________________
     font-size: 14.01px;
     color: #ffffff;
     text-align: center;
-    
 }
-.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8{
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8 {
     position: relative;
 }
-.trapezoid p{
+
+.trapezoid p {
     margin-bottom: -6px;
 }
-.img1 .trapezoid, .img5 .trapezoid{
+
+.img1 .trapezoid,
+.img5 .trapezoid {
     border-bottom: 44px solid #f0975c;
 }
-.circle{
+
+.circle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -630,47 +776,61 @@ ________________________________
     padding-left: 13px;
     padding-top: 16px;
 }
-.circle sup{
+
+.circle sup {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 11px;
 }
+
+
 /*
 _________________________
 brands
 _________________________
 */
-.brands{
+
+.brands {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    
+    justify-content: space-between;
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
+
+.brands div {
+    flex: 1;
+}
+
+
 /*
 _______________________________
 designers
 ______________________________
 */
-.designers{
+
+.designers {
     background: #d9bf8f;
-    
 }
-.designers-flex-container{
+
+.designers-flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    height: 400px;
     position: relative;
-    
 }
-.girl, .boy{
+
+.girl,
+.boy {
     width: 50%;
     text-align: right;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
-.girl p, .boy p{
+
+.girl p,
+.boy p {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 100;
@@ -678,23 +838,29 @@ ______________________________
     color: #ffffff;
     line-height: 30.23px;
 }
-.girl{
+
+.girl {
     padding-right: 100px;
     text-align: left;
     text-indent: 20%;
     direction: rtl;
 }
-.boy{
-   padding-left: 100px;
+
+.boy {
+    padding-left: 100px;
 }
-.girl img+p{
+
+.girl img+p {
     margin-top: 110px;
 }
-.boy img+p{
+
+.boy img+p {
     text-indent: 20%;
     margin-top: 110px;
 }
-.girl h2, .boy h2{
+
+.girl h2,
+.boy h2 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: bold;
@@ -702,76 +868,95 @@ ______________________________
     margin-bottom: 14px;
     margin-top: 34px;
 }
-.girl h2+p, .boy h2+p{
+
+.girl h2+p,
+.boy h2+p {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 14px;
     color: #7f7e7e;
 }
-.girl img{
+
+.girl img {
     float: left;
 }
-.boy img{
+
+.boy img {
     float: right;
 }
-.designers-flex-container .triangle{
+
+.designers-flex-container .triangle {
     position: absolute;
     top: 0;
-    left: 400px;
+    left: calc(50% - 186px);
     width: 0;
-	height: 0;
-	border-left: 186px solid transparent;
-	border-right: 186px solid transparent;
-	border-top: 30px solid #ffffff;
+    height: 0;
+    border-left: 186px solid transparent;
+    border-right: 186px solid transparent;
+    border-top: 30px solid #ffffff;
 }
+
+
 /*
 ____________________________________
 footer
 ___________________________________
 */
-footer{
+
+footer {
     background: #141414;
+    overflow: hidden;
 }
-.shops, .information, .castomer-service{
-    flex: 1;
-}
-.stay-connected{
-    flex: 2;
-}
-.footer-flex-container ul{
-    padding: 0;
-}
-.footer-flex-container{
+
+.footer-flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-top: 50px;
 }
-.footer-flex-container h2{
+
+.shops,
+.information,
+.castomer-service {
+    flex: 1;
+}
+
+.stay-connected {
+    flex: 2;
+}
+
+.footer-flex-container ul {
+    padding: 0;
+}
+
+.footer-flex-container h2 {
     list-style: none;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 16px;
     color: #ffffff;
 }
-.footer-flex-container li{
+
+.footer-flex-container li {
     list-style: none;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 30px;
 }
-.footer-flex-container a{
-    text-decoration:none;
+
+.footer-flex-container a {
+    text-decoration: none;
     color: #5a5a5a;
 }
 
-form{
+form {
     border: 1px solid #5a5a5a;
     width: 362px;
     height: 42px;
     position: relative;
 }
+
 .email {
     color: #5a5a5a;
     vertical-align: middle;
@@ -781,7 +966,8 @@ form{
     padding-top: 13px;
     padding-left: 28px;
 }
-form .button{
+
+form .button {
     width: 101px;
     height: 33px;
     color: #ffffff;
@@ -793,34 +979,39 @@ form .button{
     right: 3px;
     bottom: 4px;
 }
-.footer-dash{
+
+.footer-dash {
     position: relative;
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.footer-dash, .block-dash{
+
+.footer-dash,
+.block-dash {
     background: #5a5a5a;
 }
-.footer-dash .triangle{
+
+.footer-dash .triangle {
     position: absolute;
     top: 0;
     left: 656px;
     width: 0;
-	height: 0;
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent;
-	border-top: 10px solid #5a5a5a;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 10px solid #5a5a5a;
 }
-.copyright{
+
+.copyright {
     font-size: 11px;
     color: #5a5a5a;
-    flex: 0 22%;
+    flex: 100%;
     line-height: 18px;
     font-family: 'Lato', sans-serif;
     margin-bottom: 20px;
 }
-.footer-social div{
-  
+
+.footer-social div {
     border-radius: 50%;
     background-color: #ffffff;
     width: 51px;
@@ -830,38 +1021,44 @@ form .button{
     font-size: 24px;
     line-height: 30.01px;
     margin-right: 15px;
-    
 }
-.footer-social i{
+
+.footer-social i {
     color: #141414;
-    padding-top: 14px; 
+    padding-top: 14px;
 }
-.footer-social{
+
+.footer-social {
     margin-bottom: 37px;
 }
-.stay-connected h2{
+
+.stay-connected h2 {
     margin-bottom: 50px;
 }
-.cards div{
+
+.cards div {
     display: inline-block;
     margin-right: 25px;
     margin-bottom: 50px;
-    
 }
-.stay-connected span{
+
+.stay-connected span {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: bold;
     font-size: 16px;
 }
-.cards{
+
+.cards {
     flex: 0 100%;
     vertical-align: baseline;
 }
-.visa img{
+
+.visa img {
     padding-bottom: 3px;
 }
-.button-up{
+
+.button-up {
     height: 40px;
     width: 40px;
     background: #000000;
@@ -872,11 +1069,316 @@ form .button{
     bottom: 120px;
     right: 0;
 }
-.button-up i{
+
+.button-up i {
     padding-top: 10px;
 }
-.bottom-line{
+
+.bottom-line {
     height: 42px;
     background: #000000;
-        
+}
+
+@media(max-width:1200px) {
+    .container {
+        max-width: 992px;
+    }
+    .left-sup-main h2,
+    .center-sup-main h2,
+    .right-sup-main h2 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        max-width: 768px;
+    }
+    .bar-left-side p,
+    .bar-right-side a {
+        font-size: 14px;
+    }
+    .fabars {
+        display: block;
+        font-size: 48px;
+        flex: 25%;
+        top: calc(50% - 90px);
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        flex: 75%;
+    }
+    .bottom-right-side {
+        flex: 100%;
+        text-align: center;
+        padding-top: 35px;
+    }
+    .bottom-right-side div i {
+        color: #d9bf8f;
+        padding-top: 8px;
+        font-size: 28px;
+    }
+    .bottom-right-side div {
+        border-width: 3px;
+        width: 50px;
+        height: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .bottom-right-side select {
+        height: 50px;
+        width: 150px;
+        padding-left: 36px;
+        font-size: 20px;
+    }
+    /*
+    sup section
+    */
+    .left-sup,
+    .right-sup,
+    .center-sup {
+        flex: 100%;
+        margin-bottom: 20px;
+    }
+    .center-sup-main {
+        max-width: 992px;
+    }
+    .left-sup i,
+    .right-sup i,
+    .center-sup i {
+        font-size: 65px;
+    }
+    .left-sup-main h2,
+    .center-sup-main h2,
+    .right-sup-main h2 {
+        font-size: 30px;
+    }
+    .sup-flex-container p {
+        font-size: 19px;
+    }
+    .space,
+    .space1,
+    .center-sup-left-triangle,
+    .center-sup-left-triangle,
+    .center-sup-left-triangle,
+    .left-sup-triangle,
+    .center-sup-right-triangle {
+        display: none;
+    }
+    /*
+    handpicked
+    */
+    .img-handpicked .img-right {
+        flex: 100%;
+        display: flex;
+    }
+    .img-handpicked .img-left,
+    .img-handpicked .big-img {
+        flex: 50%;
+    }
+    .img-handpicked .big-img,
+    .img-small-top,
+    .img-small-bottom {
+        padding: 5px;
+    }
+    /*
+    collection
+    */
+    .collection {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .collection .img1,
+    .collection .img2,
+    .collection .img3,
+    .collection .img4,
+    .collection .img5,
+    .collection .img6,
+    .collection .img7,
+    .collection .img8 {
+        flex: 50%;
+        padding: 5px;
+    }
+    .collection img {
+        width: 100%;
+    }
+    .trapezoid {
+        bottom: 9px;
+        left: calc(50% - 100px);
+    }
+    /* 
+    brands
+    */
+    .brands div {
+        flex: 50%;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .brands {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    /* 
+    footer
+    */
+    .stay-connected {
+        flex: 100%;
+        text-align: center;
+    }
+    form {
+        margin-left: calc(50vh - 181px);
+    }
+    .email {
+        padding-left: 0;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        max-width: 320px;
+    }
+    .bar {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    .bar-left-side {
+        flex: 100%;
+        text-align: center;
+    }
+    .bar-left-side p,
+    .bar-right-side a {
+        font-size: 20px;
+    }
+    .bar-right-side li {
+        text-align: center;
+        margin-bottom: 28px;
+        display: block;
+        list-style: none;
+    }
+    .bar-right-side li+li {
+        border: none;
+    }
+    .bottom-right-side .social {
+        display: none;
+    }
+    .bottom-right-side select {
+        margin: auto;
+    }
+    .left-sup-main .icon,
+    .center-sup-main .icon,
+    .right-sup-main .icon {
+        margin-right: 1px;
+    }
+    .right-sup-triangle {
+        display: none;
+    }
+    .img-handpicked .img-left,
+    .img-handpicked .big-img {
+        flex: 100%;
+    }
+    .img-handpicked div .shop-button {
+        display: block;
+        left: calc(50% - 53px);
+        bottom: 54px;
+    }
+    .img-handpicked .img-right {
+        display: block;
+    }
+    .collection .img1,
+    .collection .img2,
+    .collection .img3,
+    .collection .img4,
+    .collection .img5,
+    .collection .img6,
+    .collection .img7,
+    .collection .img8 {
+        flex: 100%;
+    }
+    .brands div {
+        flex: 100%;
+        padding: 15px 0px;
+    }
+    .brands img {
+        width: 100%;
+    }
+    .girl img,
+    .boy img {
+        display: none;
+    }
+    .girl,
+    .boy {
+        flex: 100%;
+        padding: 0;
+        text-align: center;
+        text-indent: inherit;
+    }
+    .boy img+p {
+        text-indent: inherit;
+    }
+    .block-text p {
+        margin: 0;
+    }
+    .block-dash {
+        display: none;
+    }
+    .block-text,
+    .block-text .summer {
+        margin: 0;
+        top: calc(50% - 46.5px);
+    }
+    .designers {
+        margin-top: 50px;
+    }
+    /* footer */
+    .shops,
+    .information,
+    .castomer-service {
+        flex: 100%;
+    }
+    .footer-flex-container ul {
+        display: none;
+    }
+    .footer-social i {
+        padding-top: 8px;
+    }
+    .footer-social div {
+        width: 40px;
+        height: 40px;
+    }
+    .girl p,
+    .boy p {
+        font-size: 20px;
+    }
+    .girl h2,
+    .boy h2 {
+        font-size: 40px;
+    }
+    .girl h2+p,
+    .boy h2+p {
+        font-size: 20px;
+    }
+    form {
+        margin-left: 0;
+        width: 300px;
+    }
+    .footer-flex-container {
+        text-align: center;
+    }
+    .email {
+        margin-left: -72px;
+    }
+    .button-up {
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+    }
+    .button-up i {
+        padding-top: 18px;
+    }
+    .footer-flex-container h2 {
+        font-size: 25px;
+    }
 }
