@@ -198,8 +198,7 @@ sale
 */
 
 .sale {
-    background-image: url(../img/Sale.png);
-    background-size: cover;
+    
     margin-top: 20px;
 }
 
@@ -208,8 +207,8 @@ sale
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    height: 692px;
-    margin-bottom: 100px;
+	background-image: url(../img/Sale.png);
+    background-size: cover;
 }
 
 .triangle {
@@ -219,6 +218,7 @@ sale
     border-right: 200px solid transparent;
     border-top: 60px solid #ffffff;
 	margin-top: 0;
+	margin-bottom: 50px;
 }
 
 .content {
@@ -229,6 +229,25 @@ sale
     margin: 0;
     position: relative;
     text-align: center;
+	margin-bottom: 50px;
+}
+.s2{
+	background: #9dff00;
+	height: 500px;
+	font-size: 100px;
+	text-align: center;
+}
+.s3{
+	background: #664583;
+	height: 500px;
+	font-size: 100px;
+	text-align: center;
+}
+.s4{
+	background: #e5ce50;
+	height: 500px;
+	font-size: 100px;
+	text-align: center;
 }
 
 .content p {
@@ -346,11 +365,16 @@ shop now
 .swiper-pagination-bullet {
     width: 18px;
     height: 19px;
-    background: #910c0c;
+    background: #242222;
     display: inline-block;
     transform: rotate(45deg);
     margin-right: 15px;
 	opacity: 0.5;
+	border-radius: 0 0 0 0 ;
+	margin-right: 5px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 9px;
 }
 .swiper-pagination-bullet-active {
 	opacity: 1;
