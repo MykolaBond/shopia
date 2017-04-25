@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <script src="https://use.fontawesome.com/c01069cbdc.js"></script>
     <script src="https://use.fontawesome.com/a625b4326a.js"></script>
     <script src="https://use.fontawesome.com/8fe4526853.js"></script>
     <script src="https://use.fontawesome.com/164f3e4a99.js"></script>
     <script src="https://use.fontawesome.com/02e375ba29.js"></script>
     <script src="https://use.fontawesome.com/ae1a196a81.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
     <meta >
 </head>
 
@@ -63,9 +66,9 @@
                            <div class="social"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
                            <div class="social"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
                           <label><select name="money">
-                              <option value="mony">RUPIA</option>
-                              <option value="mony">DOLLAR</option>
-                              <option value="mony">EURO</option>
+                              <option value="money">RUPIA</option>
+                              <option value="money">DOLLAR</option>
+                              <option value="money">EURO</option>
                           </select></label>
                        </div>
                     </div>
@@ -74,27 +77,34 @@
     </header>
     <section class="sale">
        <div class="container">
-            <div class="main">
-                <div class="triangle"></div>
-                <div class="content">
-                    <p class="white-font season">mid-season</p>
-                    <p class="big-sale">Sale</p>
-                    <p class="white-font up">up to</p>
-                    <p class="fifty">50% off</p>
-                    <div class="left-min-strip"></div>
-                    <div class="left-big-strip"></div>
-                    <div class="right-min-strip"></div>
-                    <div class="right-big-strip"></div>
-                    <div class="inside-border"></div>
-                </div>
-                <div class="shop-button"><a href="#">SHOP NOW</a></div>
-                <div class="square">
-                    <div></div>
-                    <div class="black"></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
+           <div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+					   <div class="main">
+							<div class="triangle"></div>
+							<div class="content">
+								<p class="white-font season">mid-season</p>
+								<p class="big-sale">Sale</p>
+								<p class="white-font up">up to</p>
+								<p class="fifty">50% off</p>
+								<div class="left-min-strip"></div>
+								<div class="left-big-strip"></div>
+								<div class="right-min-strip"></div>
+								<div class="right-big-strip"></div>
+								<div class="inside-border"></div>
+							</div>
+							<div class="shop-button"><a href="#">SHOP NOW</a></div>
+						</div>
+					</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+				</div>
+        <!-- Add Pagination -->
+				<div class="swiper-pagination">
+					
+			</div>
+		   </div> 
       </div>
     </section>
     <section class="sup">
@@ -426,7 +436,14 @@
            </div>
         </div>
     </footer>
+    <script src="js/swiper.jquery.min.js"></script>
     <div class="bottom-line"></div>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
 </body>
 
 </html>
